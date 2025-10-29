@@ -18,6 +18,8 @@ const paginationResults =(obj)=> {
     return results
 }
 
+
+// build JokeArr data for pagination
 const buildJokeArr =(arr, arr2, start, end, page)=> {
 
     let results = {}
