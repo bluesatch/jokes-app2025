@@ -1,0 +1,54 @@
+* { box-sizing: border-box;}
+
+:root {
+    --color1: #f9f9ed;
+    --color2: #dbf4a7;
+    --color3: #00120b;
+    --color4: #70161e;
+    --color5: #538083;
+    --font1: "Bangers", system-ui;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color1);
+}
+
+h2 {
+    font-family: var(--font1);
+    font-size: 64px;
+}
+
+.footer {
+    padding: 20px 0;
+}
+
+.header {
+    padding: 15px 0;
+    background-color: var(--color2);
+}
+
+.h1-heading {
+    font-family: var(--font1);
+    font-size: 48px;
+    text-shadow: 2px 2px 2px var(--color3);
+}
+
+.h2-joke {
+    font-size: 22px;
+}
+
+.main {
+    margin: 20px 0;
+    padding: 15px 0;
+}
+
+.top-link {
+    color: var(--color3);
+}
+
+.top-link:hover {
+    color: var(--color4);
+}
+
