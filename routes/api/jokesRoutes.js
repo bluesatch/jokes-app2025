@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3001
 
 // http://localhost:3001/jokes
 router.get('/', (req, res)=> {
-    
+
     const url = `https://api.sampleapis.com/jokes/goodJokes`
     /** pagination...🤞🏾 */
     const pageData = paginationResults(req)
@@ -73,7 +73,10 @@ router.get('/:id', (req, res)=> {
                 title: joke.setup,
                 name: joke.setup,
                 punchline: joke.punchline,
-                gif: getGif()
+                prev: joke.id == 7 ? 3 : joke.id - 1,
+                next: joke.id == 3 ? 7 : joke.id + 1,
+                gif: getGif(),
+                id: joke.id
             })
         })
 })
